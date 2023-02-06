@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_customer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".view.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/identification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="1005849384" />
+
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Luis Álvaro Mesa Guzmán" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_light"
+                    android:text="luisguzman014.m@gmail.com" />
+
+                <TextView
+                    android:id="@+id/registerDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/opensans_light"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/delete_icon"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_delete" />
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="30dp"
+                    android:padding="2dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
